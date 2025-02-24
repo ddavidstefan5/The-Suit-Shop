@@ -302,3 +302,137 @@ h2 {
 .submit-btn:hover {
     background-color: #555;
 }
+/* Mobile-first approach */
+@media only screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        padding: 10px 0px;
+    }
+
+    #sus, #textnavbar {
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* General body adjustments */
+    body {
+        background: gray;
+    }
+
+    /* Adjust h1 font size */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* Adjust subtitle font size */
+    #subtitlu, #subtitlu2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Images for smaller devices */
+    #costum1, #pozas1, #pozas2, #pozas3 {
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .pozes {
+        display: block;
+        justify-content: center;
+    }
+
+    /* Adjust text padding for better readability */
+    .fiecaretext, .textprez, #textinc {
+        padding: 0px 20px;
+    }
+
+    /* FAQ section adjustments */
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-button {
+        font-size: 1em;
+    }
+
+    /* Contact Form */
+    .ceva {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info, .formular {
+        width: 100%;
+    }
+
+    .formular h3, .info h3 {
+        font-size: 1.6em;
+    }
+
+    .formular input, .formular textarea {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+    /* Further reduce padding and font sizes for smaller screens */
+    header {
+        padding: 5px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #subtitlu, #subtitlu2 {
+        font-size: 12px;
+    }
+
+    #costum1, #pozas1, #pozas2, #pozas3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .faq-container {
+        padding: 5px;
+    }
+
+    .faq-button {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
